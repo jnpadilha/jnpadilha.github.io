@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>About Julia Nina Padilha</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <div id="navbar"></div>
+
+    <section class="page-section bg-white portfolio-section" id="projects">
+        <div class="container" style="margin-top: 27px;">
+            <div class="text-center">
+                <img class="img-fluid d-block mx-auto" src="../assets/img/projects/psychological_support_center/logo.png" alt="" />
+                <h2 class="section-heading text-uppercase">Psychological Support Center for Victims of Domestic Violence </h2>
+                <h3 class="section-subheading text-muted">Violence Against Women Initiative</h3>
+            </div>
+            <div class="text-left">
+                <h4 class="section-heading text-capitalize">Overview</h4>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-11">
+                    <p class="text-muted-justified">
+                        <b>(S)ituation:</b> As a Psychology professor and internship supervisor, I coordinated community-based initiatives focused on supporting women affected by domestic violence. The project aimed to address gaps in psychosocial support, community awareness, and interagency collaboration while promoting resilience and violence prevention.
+                    </p>
+                    <p class="text-muted-justified">
+                        <b>(T)ask:</b> The initiative sought to develop educational and support programs for victims of domestic violence, strengthen partnerships with external agencies, and create coordinated interventions for women, families, and individuals involved in situations of violence.
+                    </p>
+                    <p class="text-muted-justified">
+                        <b>(A)ction:</b> Supervised psychology internship students and coordinated working groups focused on different areas of intervention, including educational campaigns, community lectures, reflective groups for perpetrators of violence, and victim support services. Conducted theoretical research and community mapping on domestic violence, available resources, and barriers faced by victims. Collaborated with community agencies and the Public Ministry to establish partnerships and develop educational materials and outreach initiatives.
+                    </p>
+                    <p class="text-muted-justified">
+                        <b>(R)esult:</b> Supported the creation of a Psychological Support Center for victims of domestic violence, providing psychological and legal assistance. Established partnerships with the Public Ministry to facilitate reflective support groups for men and women affected by violence. Developed educational materials, lectures, and awareness initiatives delivered in schools and community organizations to increase public awareness and access to support resources.
+                    </p>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <div id="footer"></div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    
+    <script>
+        const nav = ['navbar'];
+        nav.forEach(b => {
+            fetch(`${b}.html`)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(`${b}`).outerHTML = data;
+                })
+                .catch(error => console.error(`Error loading ${b}:`, error));
+        });
+
+        const body = ['footer'];
+        body.forEach(b => {
+            fetch(`../body/${b}.html`)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(`${b}`).outerHTML = data;
+                })
+                .catch(error => console.error(`Error loading ${b}:`, error));
+        });
+    </script>
+</body>
+</html>
