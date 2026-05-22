@@ -27,8 +27,9 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About me</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>                    
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>                    
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -42,6 +43,7 @@
     <div id="section-about-me"></div>
     <div id="section-projects"></div>
     <div id="section-education"></div>
+    <div id="section-certifications"></div>
     <div id="section-contact"></div>
 
     <!-- Footer-->
@@ -66,7 +68,7 @@
                 .catch(error => console.error(`Error loading ${b}:`, error));
         });
 
-        const sections = ['about-me', 'coding', 'contact', 'education', 'projects'];
+        const sections = ['about-me', 'contact', 'education', 'projects', 'certifications'];
         sections.forEach(section => {
             fetch(`body/sections/${section}.html`)
                 .then(response => response.text())
@@ -74,18 +76,6 @@
                     document.getElementById(`section-${section}`).outerHTML = data;
                 })
                 .catch(error => console.error(`Error loading ${section}:`, error));
-        });
-
-        const projects = ['cacuria', 'digital-inspector', 'distribution',
-                          'eduvis', 'ginga', 'iago', 'rural-property-valuation',
-                          'similarity', 'soybean-yield-forecast', 'user-interaction-analysis'];
-        projects.forEach(project => {
-            fetch(`body/modals/${project}.html`)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById(`project-${project}`).outerHTML = data;
-                })
-                .catch(error => console.error(`Error loading ${project}:`, error));
         });
     </script>
 </body>
