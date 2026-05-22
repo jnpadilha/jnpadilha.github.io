@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>About Julia Nina Padilha</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <div id="navbar"></div>
+
+    <section class="page-section bg-white portfolio-section" id="projects">
+        <div class="container" style="margin-top: 27px;">
+            <div class="text-center">
+                <img class="img-fluid d-block mx-auto" src="../assets/img/projects/cacuria/logo.png" alt="" />
+                <h2 class="section-heading text-uppercase">Integrating Mental Health Care into Disaster Recovery</h2>
+            </div>
+            <div class="text-left">
+                <h4 class="section-heading text-capitalize">Overview</h4>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-11">
+                    <p class="text-muted-justified">
+                        <b>(S)ituation:</b> Disasters can cause long-term psychological impacts such as PTSD, anxiety, depression, and substance use, especially among vulnerable populations. Despite this, mental health support is still underrepresented in emergency management and disaster recovery frameworks in British Columbia.
+                    </p>
+                    <p class="text-muted-justified">
+                        <b>(T)ask:</b> This research examined how the Government of British Columbia integrates mental health care into disaster recovery, identifying gaps and proposing improvements to strengthen long-term, equitable, and culturally appropriate support.
+                    </p>
+                    <p class="text-muted-justified">
+                        <b>(A)ction:</b> Conducted a qualitative secondary research study using academic literature and official BC government documents related to disaster recovery, emergency management, and mental health. Reviewed legislation, policies, reports, and peer-reviewed studies to analyze current practices, psychosocial interventions, and recovery strategies in the Canadian context.
+                    </p>
+                    <p class="text-muted-justified">
+                        <b>(R)esult:</b> Findings revealed limited Canadian research on disaster-related mental health despite increasing emergencies and evacuations. While BC provides short-term support such as Psychological First Aid, crisis lines, and wellness programs, access to specialized care and standardized evaluation methods remains limited. Recommendations included integrating mental health into all stages of emergency management, expanding mobile and telehealth services, improving interagency coordination, strengthening culturally safe community-based supports, and creating standardized evaluation frameworks for long-term recovery outcomes.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-11">
+                    <ul class="list-inline">
+                        <li>More information:
+                            <a class="link" target="_blank"
+                                href="https://jibc.arcabc.ca/post-baccalaureate-diploma-disaster-management-pbddm/integrating-mental-health-care-disaster">Read full version</a>                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <div id="footer"></div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    
+    <script>
+        const nav = ['navbar'];
+        nav.forEach(b => {
+            fetch(`${b}.html`)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(`${b}`).outerHTML = data;
+                })
+                .catch(error => console.error(`Error loading ${b}:`, error));
+        });
+
+        const body = ['footer'];
+        body.forEach(b => {
+            fetch(`../body/${b}.html`)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(`${b}`).outerHTML = data;
+                })
+                .catch(error => console.error(`Error loading ${b}:`, error));
+        });
+    </script>
+</body>
+</html>
