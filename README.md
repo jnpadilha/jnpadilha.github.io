@@ -3,8 +3,7 @@
 </h1>
 
 <p align="center">
-<a href="https://github.com/jnpadilha">Github</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
-<a href="https://www.linkedin.com/in/julia-padilha">Linkdin</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+<a href="https://www.linkedin.com/in/julia-padilha">Linkedin</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 </p>
 
 <br>
